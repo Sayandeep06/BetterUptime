@@ -1,7 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
-import {prismaClient} from "store/client"
+import {prismaClient} from 'store/client'
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;

@@ -5,7 +5,11 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "store/client": ["../store/index.ts"]
+    }
   },
   "include": [
     "**/*.ts",

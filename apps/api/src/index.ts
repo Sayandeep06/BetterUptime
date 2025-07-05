@@ -11,3 +11,5 @@ app.use(express.json())
 app.use('/website', websiteRouter);
 app.use('/status', statusRouter);
 app.use('/user', userRouter);
+
+app.listen(3001)
