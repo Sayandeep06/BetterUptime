@@ -1,6 +1,6 @@
 import express from "express"
 export const websiteRouter = express.Router()
-import {prismaClient} from "store"
+import {prismaClient} from "store/index"
 
 websiteRouter.post('/', async (req, res)=>{
     if(!req.body.url){
