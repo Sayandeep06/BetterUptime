@@ -23,7 +23,7 @@ userRouter.post('/signup', async(req, res)=>{
     })
 
 })
-userRouter.post('/signup', async (req, res)=>{
+userRouter.post('/signin', async (req, res)=>{
     const userData = UserObject.safeParse(req.body);
     if(!userData.success){
         res.status(403).json({})
