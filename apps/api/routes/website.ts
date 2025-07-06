@@ -9,6 +9,8 @@ websiteRouter.post('/', middleware, async (req, res)=>{
         return;
     }
 
+    console.log(req.userId)
+
     const website = await prismaClient.website.create({
         data:{
             url: req.body.url,
