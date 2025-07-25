@@ -1,6 +1,6 @@
 import express from "express";
 import { UserObject } from "../types";
-import { prismaClient } from "store/client";
+import { prismaClient } from "store";
 import jwt from 'jsonwebtoken';
 export const userRouter = express.Router();
 
@@ -23,7 +23,8 @@ userRouter.post('/signup', async(req, res)=>{
     })
 
 })
-userRouter.post('/signup', async (req, res)=>{
+
+userRouter.post('/signin', async (req, res)=>{
     const userData = UserObject.safeParse(req.body);
     if(!userData.success){
         res.status(403).json({})

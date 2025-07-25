@@ -38,13 +38,12 @@ importers:
       jsonwebtoken:
         specifier: ^9.0.2
         version: 9.0.2
-      zod:
-        specifier: ^3.25.74
-        version: 3.25.74
-    devDependencies:
       store:
         specifier: workspace:*
         version: link:../../packages/store
+      zod:
+        specifier: ^3.25.74
+        version: 3.25.74
 
   apps/api2:
     dependencies:

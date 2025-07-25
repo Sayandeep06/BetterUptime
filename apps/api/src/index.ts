@@ -12,4 +12,6 @@ app.use('/website', websiteRouter);
 app.use('/status', statusRouter);
 app.use('/user', userRouter);
 
-app.listen(3001)
+app.listen(3001, ()=>{
+    console.log(`http://localhost:${3001}`)
+})
