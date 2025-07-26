@@ -36,7 +36,7 @@ userRouter.post('/signin', async (req, res)=>{
         }
     })
 
-    if(!user || user.password!== userData.data.password){
+    if(!user || user.password !== userData.data.password){
         res.status(403).json({})
         return
     }

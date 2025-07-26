@@ -1,8 +1,9 @@
 import express from "express"
 export const websiteRouter = express.Router()
 import {prismaClient} from "store"
+import { middleware } from "../middleware"
 
-websiteRouter.post('/', async (req, res)=>{
+websiteRouter.post('/', middleware, async (req, res)=>{
     if(!req.body.url){
         res.status(411).json({});
         return;
@@ -12,7 +13,7 @@ websiteRouter.post('/', async (req, res)=>{
         data:{
             url: req.body.url,
             timeAdded: new Date(),
-            userId: "123"
+            userId: req.userId as string
         }
     })
 
