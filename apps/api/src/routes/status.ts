@@ -3,8 +3,8 @@ export const statusRouter = express.Router()
 import {prismaClient} from 'store'
 import { middleware } from "../middleware"
 
-statusRouter.get('/:websiteId', middleware, (req, res)=>{
-    const website = prismaClient.website.findFirst({
+statusRouter.get('/:websiteId', middleware, async (req, res)=>{
+    const website = await prismaClient.website.findFirst({
         where: {
             userId : req.userId,
             id: req.params.websiteId
