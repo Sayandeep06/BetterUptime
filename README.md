@@ -1,6 +1,6 @@
 # Better Uptime
 
-Uptime monitoring platform
+Uptime monitoring platform blah
 
 ## Using this example
 
