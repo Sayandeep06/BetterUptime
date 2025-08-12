@@ -1,6 +1,6 @@
-# Turborepo starter
+# Better Uptime
 
-This Turborepo starter is maintained by the Turborepo core team.
+Uptime monitoring platform
 
 ## Using this example
 
